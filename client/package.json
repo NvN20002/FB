@@ -1,21 +1,30 @@
 {
-  "name": "backend",
+  "name": "frontend",
   "private": true,
-  "version": "1.0.0",
-  "main": "server.js", // Pointing to your server file
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js", // Start command for production
-    "dev": "nodemon server.js", // For development, use nodemon for auto-restart
-    "build": "echo 'No build step for backend'" // Placeholder if no build step is required
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.18.2", // Example dependency
-    "mongoose": "^6.7.0", // Example dependency for MongoDB
-    "cors": "^2.8.5", // Middleware for CORS
-    "dotenv": "^16.0.3" // To manage environment variables
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22", // For development, automatically restarts the server
-    "eslint": "^8.55.0" // Include ESLint for linting if desired
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.4.10"
   }
 }
