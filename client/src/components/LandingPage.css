@@ -1,0 +1,234 @@
+/* src/components/LandingPage.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #f5f5f5; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white; /* White background for content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between form elements */
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.browse-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Adjust this value to set the button width */
+    max-width: 250px; /* You can set a max width if needed */
+    margin: 10px 0; /* Add margin to separate from other elements */
+}
+
+.browse-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.post-list {
+    margin-top: 20px; /* Space above post list */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between posts */
+}
+
+.post {
+    background: #fff; /* White background for posts */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.post h2 {
+    margin: 0 0 10px 0; /* Space below title */
+}
+
+.post p {
+    margin: 0 0 10px 0; /* Space below content */
+}
+
+.post img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 4px; /* Rounded image corners */
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between file input and file name */
+}
+
+.file-name {
+    color: #555; /* Slightly lighter color for file name text */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .landing-page {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    button, .browse-button {
+        width: 100%; /* Full width buttons */
+    }
+
+    .post {
+        padding: 10px; /* Adjust padding for posts */
+    }
+}
+.file-status {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px; /* Space above the file status message */
+}
+.post-buttons {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.post button {
+    padding: 8px 12px; /* Adjust button padding */
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s;
+    flex: 1; /* Make buttons take equal space */
+    margin-right: 5px; /* Space between buttons */
+}
+
+.post button:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+}
+
+.post button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* src/components/LoginPage.css */
+
+.login-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+/* LandingPage.css */
+.landing-page {
+    position: relative; /* Ensure this is set for absolute positioning */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.logout-button { /* Ensure this class targets your existing logout button */
+    position: absolute; /* Position it relative to the landing page */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    padding: 10px 15px; /* Button padding */
+    background-color: #dc3545; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer */
+    font-size: 16px; /* Font size */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}

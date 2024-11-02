@@ -1,0 +1,37 @@
+/* LoginPage.css */
+.login-page {
+    position: relative; /* Required for absolute positioning of the logout button */
+    padding: 20px; /* Optional padding */
+}
+
+.logout-button {
+    position: absolute; /* Positioning to the top right corner */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    padding: 10px 15px; /* Button padding */
+    background-color: #dc3545; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer */
+    font-size: 16px; /* Font size */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+.error-message {
+    color: red; /* Error message color */
+}
+
+.register-link {
+    margin-top: 20px; /* Space above the register link */
+}
+
+.link-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: blue; /* Link color */
+    cursor: pointer; /* Cursor changes to pointer */
+}
